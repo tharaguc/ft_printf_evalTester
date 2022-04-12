@@ -1,17 +1,20 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I $(PF_PATH)
 NAME = test
 SRC = test.c
 OBJ = $(SRC:%.c=%.o)
-FT_PRINTF_PATH = ../printf
-LIBFT = libftprintf.a
+LIB = libftprintf.a
+
+ifndef PF_PATH
+	PF_PATH=../ft_printf
+endif
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	make re -C $(FT_PRINTF_PATH)
-	cp $(FT_PRINTF_PATH)/libftprintf.a $(LIBFT)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LIBFT)
+	make re -C $(PF_PATH)
+	cp $(PF_PATH)/libftprintf.a $(LIB)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LIB)
 
 clean:
 	$(RM) $(OBJ)

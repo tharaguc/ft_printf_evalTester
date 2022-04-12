@@ -6,12 +6,13 @@
 /*   By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:27:34 by tharaguc          #+#    #+#             */
-/*   Updated: 2022/04/13 00:05:52 by tharaguc         ###   ########.fr       */
+/*   Updated: 2022/04/13 00:52:59 by tharaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "../printf/ft_printf.h"
+
+int	ft_printf(const char *fmt, ...);
 
 int	main(void)
 {
