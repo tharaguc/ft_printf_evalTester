@@ -6,7 +6,7 @@
 /*   By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:27:34 by tharaguc          #+#    #+#             */
-/*   Updated: 2022/04/13 22:29:08 by tharaguc         ###   ########.fr       */
+/*   Updated: 2022/04/13 22:50:15 by tharaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,13 +45,15 @@ int	main(void)
 	int	sys_di = printf("printf_di   : 1 >> %d 2 >> %i 3 >> %d\n", di1, di2, di3);
 	int	ft_di = ft_printf("ft_printf_di: 1 >> %d 2 >> %i 3 >> %d\n", di1, di2, di3);
 	printf("sys: %d\n", sys_di);
-	printf("ft: %d\n", ft_di);
+	printf("ft : %d\n", ft_di);
 	printf("\x1b[36m===== di =====\x1b[39m\n\n");
 	
 	/* p */
 	printf("\x1b[36m===== p =====\x1b[39m\n");
 	int	sys_p = printf("printf_p   : 1 >> %p\n", &s1);
+	int	ft_p = ft_printf("ft_printf_p: 1 >> %p\n", &s1);
 	printf("sys: %d\n", sys_p);
+	printf("ft : %d\n", ft_p);
 	printf("\x1b[36m===== p =====\x1b[39m\n\n");
 
 	/* xX */
