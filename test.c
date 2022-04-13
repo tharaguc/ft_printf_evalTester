@@ -6,7 +6,7 @@
 /*   By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:27:34 by tharaguc          #+#    #+#             */
-/*   Updated: 2022/04/13 22:50:15 by tharaguc         ###   ########.fr       */
+/*   Updated: 2022/04/13 23:29:06 by tharaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,13 @@ int	main(void)
 	int	ft_x = ft_printf("ft_printf_x: 1 >>%X 2 >> %x 3 >> %x\n", UINT_MAX, INT_MIN, x1);
 	printf("sys: %d\n", sys_x);
 	printf("ft : %d\n", ft_x);
-	printf("\x1b[36m===== x =====\x1b[39m\n");
+	printf("\x1b[36m===== x =====\x1b[39m\n\n");
+
+	/* random */
+	printf("\x1b[36m===== random =====\x1b[39m\n");
+	int sys_r = printf("a\n");
+	int ft_r = ft_printf("a\n");
+	printf("sys: %d\n", sys_r);
+	printf("ft : %d\n", ft_r);
+	printf("\x1b[36m===== random =====\x1b[39m\n");
 }
