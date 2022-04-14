@@ -6,7 +6,7 @@
 #    By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/14 11:08:11 by tharaguc          #+#    #+#              #
-#    Updated: 2022/04/14 13:15:49 by tharaguc         ###   ########.fr        #
+#    Updated: 2022/04/14 13:24:36 by tharaguc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,4 +43,4 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re: fclean all'
+re: fclean all
