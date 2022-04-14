@@ -6,7 +6,7 @@
 /*   By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:27:34 by tharaguc          #+#    #+#             */
-/*   Updated: 2022/04/13 23:29:06 by tharaguc         ###   ########.fr       */
+/*   Updated: 2022/04/14 11:40:57 by tharaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,17 @@ int	main(void)
 	printf("ft : %d\n", ft_s);
 	printf("\x1b[36m===== s =====\x1b[39m\n\n");
 
-	/* di */
-	printf("\x1b[36m===== di =====\x1b[39m\n");
+	/* diu */
+	printf("\x1b[36m===== diu =====\x1b[39m\n");
 	int	di1 = INT_MAX;
 	int	di2 = INT_MIN;
 	int	di3 = 0;
-	int	sys_di = printf("printf_di   : 1 >> %d 2 >> %i 3 >> %d\n", di1, di2, di3);
-	int	ft_di = ft_printf("ft_printf_di: 1 >> %d 2 >> %i 3 >> %d\n", di1, di2, di3);
+	unsigned int u1 = UINT_MAX;
+	int	sys_di = printf("printf_di   : 1 >> %d 2 >> %i 3 >> %d 4 >> %u\n", di1, di2, di3, u1);
+	int	ft_di = ft_printf("ft_printf_di: 1 >> %d 2 >> %i 3 >> %d 4 >> %u\n", di1, di2, di3, u1);
 	printf("sys: %d\n", sys_di);
 	printf("ft : %d\n", ft_di);
-	printf("\x1b[36m===== di =====\x1b[39m\n\n");
+	printf("\x1b[36m===== diu =====\x1b[39m\n\n");
 	
 	/* p */
 	printf("\x1b[36m===== p =====\x1b[39m\n");
@@ -67,8 +68,8 @@ int	main(void)
 
 	/* random */
 	printf("\x1b[36m===== random =====\x1b[39m\n");
-	int sys_r = printf("a\n");
-	int ft_r = ft_printf("a\n");
+	int sys_r = printf("%-+5da\n", 123);
+	int ft_r = ft_printf("a%aaa\n");
 	printf("sys: %d\n", sys_r);
 	printf("ft : %d\n", ft_r);
 	printf("\x1b[36m===== random =====\x1b[39m\n");
