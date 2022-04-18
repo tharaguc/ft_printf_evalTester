@@ -6,7 +6,7 @@
 /*   By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:27:34 by tharaguc          #+#    #+#             */
-/*   Updated: 2022/04/14 11:40:57 by tharaguc         ###   ########.fr       */
+/*   Updated: 2022/04/18 19:50:18 by tharaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(void)
 	printf("\x1b[36m===== diu =====\x1b[39m\n");
 	int	di1 = INT_MAX;
 	int	di2 = INT_MIN;
-	int	di3 = 0;
+	int	di3 = 123;
 	unsigned int u1 = UINT_MAX;
 	int	sys_di = printf("printf_di   : 1 >> %d 2 >> %i 3 >> %d 4 >> %u\n", di1, di2, di3, u1);
 	int	ft_di = ft_printf("ft_printf_di: 1 >> %d 2 >> %i 3 >> %d 4 >> %u\n", di1, di2, di3, u1);
@@ -59,7 +59,7 @@ int	main(void)
 
 	/* xX */
 	printf("\x1b[36m===== x =====\x1b[39m\n");
-	int	x1 = 1234567;
+	int	x1 = -1;
 	int	sys_x = printf("printf_x   : 1 >>%X 2 >> %x 3 >> %x\n", UINT_MAX, INT_MIN , x1);
 	int	ft_x = ft_printf("ft_printf_x: 1 >>%X 2 >> %x 3 >> %x\n", UINT_MAX, INT_MIN, x1);
 	printf("sys: %d\n", sys_x);
@@ -68,8 +68,8 @@ int	main(void)
 
 	/* random */
 	printf("\x1b[36m===== random =====\x1b[39m\n");
-	int sys_r = printf("%-+5da\n", 123);
-	int ft_r = ft_printf("a%aaa\n");
+	int sys_r = printf("%x, %i, %s\n", -1234, -42, "hello");
+	int ft_r = ft_printf("%x, %i, %s\n", -1234, -42, "hello");
 	printf("sys: %d\n", sys_r);
 	printf("ft : %d\n", ft_r);
 	printf("\x1b[36m===== random =====\x1b[39m\n");
