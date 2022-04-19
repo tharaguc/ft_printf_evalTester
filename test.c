@@ -6,7 +6,7 @@
 /*   By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 20:27:34 by tharaguc          #+#    #+#             */
-/*   Updated: 2022/04/18 19:50:18 by tharaguc         ###   ########.fr       */
+/*   Updated: 2022/04/19 13:46:14 by tharaguc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,9 @@ int	main(void)
 	printf("\x1b[36m===== s =====\x1b[39m\n");
 	char	*s1 = "123456";
 	char	*s2 = "ABCDEF";
-	int	sys_s = printf("printf_s   : 1 >> %s 2 >> %s\n", s1 ,s2);
-	int	ft_s = ft_printf("ft_printf_s: 1 >> %s 2 >> %s\n", s1 ,s2);
+	char	*s3 = NULL;
+	int	sys_s = printf("printf_s   : 1 >> %s 2 >> %s 3 >> %s\n", s1 ,s2, s3);
+	int	ft_s = ft_printf("ft_printf_s: 1 >> %s 2 >> %s 3 >> %s\n", s1 ,s2, s3);
 	printf("sys: %d\n", sys_s);
 	printf("ft : %d\n", ft_s);
 	printf("\x1b[36m===== s =====\x1b[39m\n\n");
