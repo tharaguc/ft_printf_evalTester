@@ -6,7 +6,7 @@
 #    By: tharaguc <tharaguc@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/14 11:08:06 by tharaguc          #+#    #+#              #
-#    Updated: 2022/04/14 13:25:15 by tharaguc         ###   ########.fr        #
+#    Updated: 2022/04/20 20:34:02 by tharaguc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,4 +30,5 @@ echo '\n====================\n'
 echo '\n====================\n'
 make fclean
 make fclean -C $FT_PRINTF_PATH
+rm libftprintf.a
 
